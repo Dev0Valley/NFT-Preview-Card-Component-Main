@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- [solution](https://your-solution-url.com)
-- [live site](https://your-live-site-url.com)
+- [solution](https://github.com/Dev0Valley/NFT-Preview-Card-Component-Main)
+- [live site](https://dev0valley.github.io/NFT-Preview-Card-Component-Main/)
 
 ## My process
 
