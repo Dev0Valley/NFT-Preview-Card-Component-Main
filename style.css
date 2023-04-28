@@ -1,0 +1,119 @@
+:root{
+    --clr-primary: hsl(215, 51%, 70%);
+    --clr-primary-900: hsl(178, 100%, 50%);
+
+    --clr-neutral-900:hsl(217, 54%, 11%);
+    --clr-neutral-700:hsl(216, 50%, 16%);
+    --clr-neutral-400: hsl(215, 32%, 27%);
+    --clr-light:hsl(0, 0%, 100%);
+
+    --fs-secondary:1.125rem;
+    --fs-primary:1.2rem;
+
+    --fw-regular:400;
+    --fw-bold:600;
+}
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display:grid;
+    place-items: center;
+    background-color: var(--clr-neutral-900);
+    font-family: 'Outfit', sans-serif;
+}
+.main-container{
+    max-width: 350px;
+    padding:1.3rem;
+    background-color: var(--clr-neutral-700);
+    border-radius: 15px;
+    display: grid;
+    gap:1.4rem;
+}
+.img-container{
+    position: relative;
+}
+.img-container img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.view{
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: var(--clr-primary-900);
+}
+.view svg{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.img-container:hover .view{
+    opacity: 0.5;
+}
+.content{
+    display: grid;
+    justify-content: space-between;
+    gap: 1.6rem;
+    margin-bottom: 1rem;
+}
+h1{
+    color: var(--clr-light);
+    font-size: var(--fs-primary);
+    font-weight: var(--fw-bold);
+}
+ h1:hover{
+    color: var(--clr-primary-900);
+    cursor: pointer;
+}
+.content p{
+    color:var(--clr-primary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-secondary);
+}
+.flex-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-group .eth{
+    color: var(--clr-primary-900);
+}
+.flex-group .cho{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.name{
+    color: var(--clr-light);
+}
+.name:hover{
+    color: var(--clr-primary-900);
+    cursor: pointer;
+}
+.about-creator{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.about-creator img{
+     width:40px;
+     height: 40px;
+     border: 1px solid var(--clr-light);
+     border-radius: 50%;
+}
+.bottom-line{
+    border: 0;
+    height: 1px;
+    background-color: var(--clr-neutral-400);
+}
